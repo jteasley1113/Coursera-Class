@@ -1,1 +1,88 @@
 /* CSS Stylesheet */
+body {
+  font-family: comfortaa, sans-serif;
+}
+
+#mainheader {
+  font-size: 175%;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.food {
+  font-size: 125%;
+  color: white;
+  padding: 7px;
+  width: 30%;
+  margin-bottom: -35px
+}
+
+#H1{
+  position: relative;
+  top: -35px;
+  right: -15px;
+  float: right;
+  background-color: red;
+}
+
+#H2{
+  position: relative;
+  top: -35px;
+  right: -15px;
+  float: right;
+  background-color: black;
+}
+
+#H3{
+  position: relative;
+  top: -35px;
+  right: -15px;
+  float: right;
+  background-color: blue;
+}
+
+.section {
+  width: 100%;
+  padding: 35px 15px 15px 15px;
+  margin: 20px;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: green;
+  box-sizing: border-box;
+
+}
+
+/* Desktop Version */
+  @media (min-width: 992px) {
+    .section{
+      width: calc(33.33% - 40px);
+      float: left;
+    }
+  }
+
+/* Tablet Version */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #S1, #S2, #S3{
+      float: left;
+    }
+    #S1 {
+      width: calc(50% - 40px);
+    }
+    #S2 {
+      width: calc(50% - 40px);
+    }
+    #S3 {
+      width: calc(100% - 40px);
+    }
+}
+
+/* Mobile Version */
+  @media (max-width: 767px) {
+    .section{
+      width: calc(100% - 40px);
+    }
+  }
